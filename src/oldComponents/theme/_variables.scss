@@ -1,0 +1,52 @@
+//COLORS
+$primary       : #0a71a8;
+$primary-dark  : #00649B;
+$primary-light : #E8F0FE;
+$secondary     : #f8bb86;
+$danger        : #d0021b;
+$white         : #ffffff;
+$light-grey    : #f5f7f7;
+$metal         : #c4c5d6;
+$font-base     : #32373f;
+$font-gray     : #6f727d;
+
+//BORDERS
+$primary-border: 1px solid $primary;
+$lighter-border: 1px solid #f4f5f8;
+
+//INPUTS
+$input-height-normal: 40px;
+$input-padding: 10px;
+$input-height-small: 28px;
+$input-padding-small: 6px 8px;
+$input-border-radius: 18px;
+
+//BUTTONS
+$button-primary-background: linear-gradient(to bottom, #0a5c9b, #0a84b3);
+$button-min-width: 80px;
+$button-height-normal: 40px;
+$button-height-small: 30px;
+$button-height-big: 55px;
+$button-padding: 10px 15px;
+$button-padding-small: 6px 8px;
+$button-padding-big: 15px 20px;
+$button-border-radius: 18px;
+$button-border-reversed: 1px solid $primary;
+
+//TABLE PADDINGS
+$table-header-padding : 25px 0;
+$table-cell-padding   : 5px 10px;
+
+//TABLE BORDERS
+$table-light-border: 1px solid #e2e5e9;
+
+
+
+//ANIMATIONS
+$fadeInQuick: fadein 0.25s;
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

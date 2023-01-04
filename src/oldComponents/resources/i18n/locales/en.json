@@ -1,0 +1,19 @@
+{
+  "Create A Key": "Create A Key",
+  "Warning": "Warning",
+  "Are you sure you want to delete this item? Deleted items cannot be restored": "Are you sure you want to delete this item? Deleted items cannot be restored",
+  "Cancel": "Cancel",
+  "Yes": "Yes",
+  "Return": "Return",
+  "Api Key": "Api Key",
+  "Description": "Description",
+  "Reset": "Reset",
+  "Save": "Save",
+  "Actions": "Actions",
+  "This field is required": "This field is required",
+  "This field must be a valid email": "This field must be a valid email",
+
+  "success": "Success",
+  "error": "Error",
+  "warning": "Warning"
+}

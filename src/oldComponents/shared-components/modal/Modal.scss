@@ -1,0 +1,51 @@
+@import '@theme/variables';
+@import '@theme/typography';
+
+.rc-modal {
+  @extend .normal-font;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  color: $font-gray;
+
+  animation: $fadeInQuick;
+
+  .rc-modal-body {
+    background: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 4px;
+    max-width: 400px;
+
+    .rc-modal--header {
+      @extend .normal-font-gray;
+      @extend .normal-font-big;
+
+      .icon {
+        font-size: 70px;
+        width: 50px;
+        width: auto;
+        color: $secondary;
+      }
+    }
+  }
+
+  &--content {
+    @extend .normal-font-gray;
+    @extend .normal-font-small;
+  }
+
+  &--large {
+    .rc-modal-body {
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+}

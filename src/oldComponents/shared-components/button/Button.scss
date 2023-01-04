@@ -1,0 +1,63 @@
+@import '@theme/variables';
+@import '@theme/typography';
+
+button.rc-button {
+  @extend .normal-font;
+  @extend .normal-font-regular-bold;
+  min-width: $button-min-width;
+  height: $button-height-normal;
+  line-height: 1;
+  border-radius: $button-border-radius!important;
+  border: none;
+  background: $button-primary-background;
+  color: $white;
+  padding: $button-padding;
+
+  &.secondary {
+    background: rgba($secondary, 0.8);
+    color: $white;
+
+    &:hover {
+      background: $secondary;
+    }
+  }
+
+  &--small {
+    @extend .normal-font-small;
+    height : $button-height-small;
+    padding : $button-padding-small;
+  }
+
+  &--big {
+    height : $button-height-big;
+    width: calc($button-height-big * 3);
+    padding : $button-padding-big;
+    border-radius: calc($button-height-big / 2)!important;
+  }
+
+  &--reversed {
+    background: $white;
+    color: $primary;
+    border: $button-border-reversed;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+
+    &.secondary {
+      background: $white;
+      border-color: $secondary;
+      color: $secondary;
+
+      &:hover {
+        color: $secondary;
+        background: $light-grey;
+      }
+    }
+  }
+
+  &:hover {
+    background: $primary;
+  }
+}

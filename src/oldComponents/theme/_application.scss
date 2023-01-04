@@ -1,0 +1,18 @@
+@import 'node_modules/rc-pagination/assets/index';
+
+.react-app-revert-style {
+  @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.25px;
+  }
+
+  a {
+    color: $primary-dark;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

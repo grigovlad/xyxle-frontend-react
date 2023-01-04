@@ -1,0 +1,51 @@
+.normal-font {
+  color: $font-base;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.color-primary {
+  color: $primary;
+}
+
+.normal-font-gray {
+  @extend .normal-font;
+  color: $font-gray;
+}
+
+.normal-font-bold {
+  @extend .normal-font;
+  font-weight: bold;
+}
+
+.normal-font-regular-bold {
+  @extend .normal-font;
+  font-weight: 400;
+}
+
+.normal-font-small {
+  @extend .normal-font;
+  font-size: 13px;
+}
+
+.normal-font-big {
+  @extend .normal-font;
+  font-size: 16px;
+}
+
+.normal-font-large {
+  @extend .normal-font;
+  font-size: 20px;
+}
+
+.normal-font-icon {
+  font-size: 16px;
+}
+
+.normal-font-icon-big {
+  font-size: 20px;
+}
+
+.normal-font-icon-extra-large {
+  font-size: 25px;
+}

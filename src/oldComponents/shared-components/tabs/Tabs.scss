@@ -1,0 +1,37 @@
+@import '@theme/variables';
+@import '@theme/typography';
+
+.rc-tabs {
+  .react-tabs {
+    &__tab {
+      background: $light-grey;
+      color: $font-gray;
+      border-color: #e2e7e7;
+      font-weight: 500;
+      margin: 0 5px;
+      border-radius: 5px 5px 0 0;
+      padding: 10px 15px;
+
+      &--selected {
+        background: $primary;
+        color: $white;
+      }
+
+      &:first-child {
+        margin-left: 10px;
+      }
+    }
+
+    &__tab-list {
+      border: none;
+      margin-bottom: 0;
+    }
+
+    &__tab-panel {
+      background: $white;
+      box-shadow: 0 2px 14px 0 rgba(153, 158, 161, 0.34);
+      padding: 15px;
+      border-radius: 6px;
+    }
+  }
+}

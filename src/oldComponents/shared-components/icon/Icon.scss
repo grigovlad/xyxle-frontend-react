@@ -1,0 +1,39 @@
+@import '@theme/variables';
+@import '@theme/typography';
+
+.icon {
+  @extend .normal-font-icon;
+  color: $metal;
+  cursor: pointer;
+  width: 20px;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &--primary {
+    color: $primary;
+  }
+
+  &--base {
+    color: $font-base;
+
+    &:hover {
+      color: $font-base;
+    }
+  }
+
+  &--danger {
+    &:hover {
+      color: $danger;
+    }
+  }
+
+  &--large {
+    font-size: 40px;
+  }
+
+  &--big {
+    @extend .normal-font-icon-big;
+  }
+}

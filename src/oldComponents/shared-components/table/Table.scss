@@ -1,0 +1,66 @@
+@import '@theme/variables';
+@import '@theme/typography';
+
+.rc-table {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    col {
+      width: auto;
+    }
+
+    border: $lighter-border;
+  }
+
+  .rc-table-thead {
+    background: $light-grey;
+    border-bottom: $table-light-border;
+
+    &--sortable {
+      position: relative;
+      cursor: pointer;
+
+      &.ordered {
+        &:after {
+          content: '\203A\203A';
+          font-size: 18px;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+        }
+      }
+
+      &.ordered.asc {
+        &:after {
+          transform: translate(-50%, -50%) rotate(-90deg);
+        }
+      }
+      &.ordered.desc {
+        &:after {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+    }
+  }
+
+  th {
+    @extend .normal-font-bold;
+    padding: $table-header-padding;
+  }
+
+  td {
+    @extend .normal-font;
+    padding: $table-cell-padding;
+  }
+
+  th.rc-table-cell, td.rc-table-cell {
+    text-align: center;
+  }
+
+  tr {
+    &:hover {
+      background: $light-grey;
+    }
+  }
+}

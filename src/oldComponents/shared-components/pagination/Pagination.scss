@@ -1,0 +1,74 @@
+@import '@theme/variables';
+@import '@theme/typography';
+
+.rc-pagination {
+  @extend .normal-font-gray;
+  text-align: right;
+
+  .rc-pagination-item-active {
+    background: $primary;
+    color: $white;
+  }
+
+  .rc-pagination-total-text {
+    @extend .normal-font;
+  }
+
+  .rc-pagination-next,
+  .rc-pagination-jump-next,
+  .rc-pagination-item {
+    border: none;
+    border-radius: 50%;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+
+    button {
+      &:hover {
+        &:after {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .rc-pagination-prev,
+  .rc-pagination-prev button,
+  .rc-pagination-next button {
+    position: relative;
+    background: $light-grey;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+      background: $primary;
+      color: $white;
+    }
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+    }
+  }
+
+  .rc-pagination-disabled {
+    cursor: auto;
+    background: $light-grey;
+    color: rgba(0, 0, 0, 0.25);
+
+    button:hover:after,
+    button:hover,
+    &:hover {
+      cursor: auto;
+      background: $light-grey;
+      color: rgba(0, 0, 0, 0.25);
+    }
+  }
+}
